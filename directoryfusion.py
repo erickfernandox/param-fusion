@@ -17,7 +17,7 @@ with open(args.param_file, "r") as param_file:
 combinations = []
 for url in urls:
     for param in params:
-        combinations.append(url + "?" + param + "=")
+        combinations.append(url + "/" + param)
 
 # Impressão dos resultados
 for combination in combinations:
